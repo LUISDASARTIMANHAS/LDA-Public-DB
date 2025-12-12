@@ -1,0 +1,28 @@
+/* header.css */
+
+.header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+/* BOTÃO NEON */
+.header button {
+    background: transparent;
+    padding: 10px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #00eaff;
+    font-weight: bold;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 10px #00eaff55;
+    transition: 0.25s;
+}
+
+.header button:hover {
+    box-shadow: 0 0 18px #00eaffaa;
+    transform: scale(1.05);
+}
