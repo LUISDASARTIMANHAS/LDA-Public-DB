@@ -1,3 +1,4 @@
+// src/components/ServerCard.jsx
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -17,7 +18,7 @@ export default function ServerCard({ address }) {
 
   return (
     <motion.div
-      className="card"
+      className="card p-3 text-center"
       onClick={handleCopy}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
