@@ -1,4 +1,3 @@
-// ServerCard.jsx
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -21,25 +20,19 @@ export default function ServerCard({ address, user, pass }) {
 
   return (
     <motion.div
-      className="card"
+      className="card bg-dark text-white h-100 p-3"
       onClick={handleCopy}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
+      style={{ cursor: "pointer", position: "relative" }}
     >
       <p className="mono">{address}</p>
-
-      <div className="db-info">
-        <p>
-          <strong>Usuário:</strong> {user}
-        </p>
-        <p>
-          <strong>Senha:</strong> {pass}
-        </p>
-      </div>
-
-      <span className="copy-status">
+      <span
+        className="copy-status position-absolute"
+        style={{ bottom: "10px", right: "10px", fontSize: "12px", color: "#00eaff" }}
+      >
         {copied ? "Copiado!" : "Clique para copiar"}
       </span>
     </motion.div>

@@ -52,35 +52,30 @@ body::before {
 
 /* SERVER CARD */
 .card {
-    padding: 15px;
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    cursor: pointer;
-    transition: 0.2s;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-4px);
+  transform: scale(1.03);
 }
 
-/* Neon animated border */
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 14px;
-    padding: 2px;
-    background: linear-gradient(45deg, #00d0ff, #ff00cc, #7700ff);
-    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    animation: neonRotate 4s linear infinite;
-    opacity: 0.35;
+.db-info p {
+  margin: 2px 0;
 }
+
+.copy-status {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 10px;
+  display: block;
+}
+
 
 @keyframes neonRotate {
     0% { transform: rotate(0deg); }

@@ -1,17 +1,20 @@
-// ServerList.jsx
 import ServerCard from "./ServerCard.jsx";
 
 export default function ServerList({ servers }) {
-	return (
-		<div className="grid">
-			{servers.map((s) => (
-				<ServerCard
-					key={s.address}
-					address={s.address}
-					user={s.user}
-					pass={s.pass}
-				/>
-			))}
-		</div>
-	);
+  return (
+    <div className="container">
+      <div className="row">
+        {servers.map((s) => (
+          <div
+            key={s.address}
+            className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          >
+            <ServerCard
+              address={s.address}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
