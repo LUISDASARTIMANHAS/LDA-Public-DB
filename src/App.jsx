@@ -6,7 +6,6 @@ export default function App() {
   const servers = [
     "ip6-lda-srv1.duckdns.org:5432",
     "pinguinho.ddns.net:5432",
-    "pinguinho.ddns.net:5432",
     "point-nashville.gl.at.ply.gg:27806",
     "147.185.221.31:27806",
   ];
