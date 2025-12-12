@@ -1,13 +1,30 @@
+// App.jsx
 import { motion } from "framer-motion";
 import Header from "./components/Header.jsx";
 import ServerList from "./components/ServerList.jsx";
 
 export default function App() {
   const servers = [
-    "ip6-lda-srv1.duckdns.org:5432",
-    "pinguinho.ddns.net:5432",
-    "point-nashville.gl.at.ply.gg:27806",
-    "147.185.221.31:27806",
+    {
+      address: "ip6-lda-srv1.duckdns.org:5432",
+      user: "public",
+      pass: "public123"
+    },
+    {
+      address: "pinguinho.ddns.net:5432",
+      user: "public",
+      pass: "public123"
+    },
+    {
+      address: "point-nashville.gl.at.ply.gg:27806",
+      user: "public",
+      pass: "public123"
+    },
+    {
+      address: "147.185.221.31:27806",
+      user: "public",
+      pass: "public123"
+    }
   ];
 
   return (
